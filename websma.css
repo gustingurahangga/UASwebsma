@@ -1,0 +1,246 @@
+/* Gaya tombol */
+.btn {
+    text-decoration: none !important;
+    color: #8B4513 !important;
+    font-weight: bold !important;
+    padding: 10px 15px !important;
+    margin: 3px 5px !important; /* Menambahkan margin horizontal */
+    border-radius: 5px !important;
+    background-color: #EAEAEA !important;
+   
+}
+
+[data-bs-theme="dark"] .btn {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 15px !important;
+    margin: 3px 5px !important; /* Menambahkan margin horizontal */
+    border-radius: 5px !important;
+    background-color: #424140 !important;
+}
+
+.btn:hover {
+    color: white !important;
+    background-color: #424140 !important;
+}
+
+[data-bs-theme="dark"] .btn:hover{
+    color: black !important;
+    background-color: #EAEAEA !important;
+}
+
+/* Gaya umum untuk halaman home */
+.home {
+    background-color: white !important;
+}
+
+[data-bs-theme="dark"] .home {
+    background-color: #000 !important;
+}
+
+/* Gaya untuk navbar */
+.navbar {
+    background-image: url(image/bcknav2.png);
+    color: #A49792 !important; /* Menjaga warna teks navbar tetap merah */
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-image: url(image/darkmode.png); /* ganti jadi background gambar hitam */
+    color: #000 !important; /* Menjaga warna teks navbar tetap merah */
+}
+
+.navbar-nav .nav-item .nav-link {
+    text-decoration: none !important;
+    color: #8B4513 !important;
+    font-weight: bold !important;
+    background: white !important;
+    padding: 10px 15px !important;
+    margin: 3px 5px !important; /* Menambahkan margin horizontal */
+    border-radius: 5px !important;
+    border: 1px solid black !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #A49792  !important; /* Mengubah warna latar belakang link saat hover */
+}
+
+/* Menambah padding kiri pada ul untuk menggeser item ke kanan */
+.navbar-nav {
+    padding-left: 0px; /* Atur nilai sesuai kebutuhan */
+}
+
+/* Gaya untuk gambar logo di navbar */
+.img {
+    width: 80px; /* Menentukan lebar gambar */
+    height: auto; /* Menyesuaikan tinggi secara proporsional */
+    float: right; /* Memposisikan gambar ke kanan */
+    margin-left: 20px; /* Menambahkan jarak antara gambar dan elemen lainnya di kiri */
+}
+/* Gaya transisi untuk carousel */
+.carousel-item {
+    transition: opacity 0.2s ease-in-out; /* Animasi transisi antar slide dengan durasi 0.2s */
+    opacity: 0; /* Default opacity untuk item carousel yang tidak aktif */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Opacity penuh untuk item carousel yang aktif */
+}
+
+
+.carousel-item.active {
+    opacity: 1; /* Slide aktif tampil dengan opasitas penuh */
+}
+
+/* Gaya umum untuk carousel */
+.carousel {
+    width: 100%; /* Memastikan carousel memenuhi lebar kontainer */
+    max-width: 900px; /* Atur lebar maksimum carousel */
+    margin: auto; /* Pusatkan carousel di tengah halaman */
+    padding-top: 12px !important;
+}
+
+/* Penyesuaian gambar dalam carousel */
+.carousel-item img {
+    width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
+    height: 500px; /* Atur tinggi gambar agar konsisten */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+/* Penyesuaian tombol kontrol */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Sesuaikan lebar tombol kontrol */
+}
+
+/* Tampilan ikon kontrol */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%; /* Atur ukuran ikon agar sesuai */
+}
+
+/* Mengatur posisi ikon secara vertikal di tengah */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: -webkit-sticky; /* Untuk dukungan Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Atur z-index untuk memastikan navbar di atas elemen lain */
+    background-color: gray; /* Sesuaikan dengan warna latar belakang navbar */
+}
+
+/* Card Styling */
+.card {
+    max-width: 280px; /* Mengatur lebar maksimum kartu */
+    margin: 0 auto; /* Memusatkan kartu secara horizontal */
+    background-image: url(image/Colorful\ Purple\ Gradient\ Creative\ Fandom\ Instagram\ Post.png); /* Tambahkan URL gambar latar belakang */
+    background-size: cover; /* Memastikan gambar mengisi seluruh area kartu */
+    background-position: center; /* Memusatkan gambar latar belakang */
+    color: black; /* Mengubah warna teks untuk kontras dengan background image */
+    position: relative; /* Untuk memastikan elemen internal bisa diatur dengan absolut */
+    padding: 1px; /* Memberi ruang dalam kartu agar konten tidak langsung menyentuh pinggir */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tambahkan bayangan untuk efek mengambang */
+}
+
+[data-bs-theme="dark"] .card {
+    color: white !important;
+    background-image: url(image/darkmode.png);
+}
+
+/* Image in Card */
+.card-img-top {
+    max-height: none; /* Mengatur tinggi maksimum gambar dalam kartu */
+    object-fit: cover; /* Memastikan gambar terisi penuh dalam area yang tersedia tanpa distorsi */
+    border-radius: 5px; /* Membuat sudut gambar agak melengkung */
+}
+
+/* Button Styling */
+.btn {
+    font-size: 14px; /* Mengecilkan ukuran font tombol */
+    padding: 5px 10px; /* Mengecilkan padding tombol */
+    background-color: rgba(0,0,0,0.5); /* Tambahkan background semi-transparan pada tombol */
+    color: white; /* Mengubah warna teks tombol menjadi putih */
+    border: none; /* Menghapus border default tombol */
+    border-radius: 3px; /* Membuat sudut tombol agak melengkung */
+}
+
+/* Fluid Image */
+.img-fluid {
+    padding: 10px;
+    padding-left: 100px;
+}
+.img2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Pertahankan aspek rasio gambar */
+    margin: 20px 0 0 0; /* Geser gambar ke bawah dengan margin-top */
+}
+
+.homcontainer {
+    background-color: #E0D5D1 !important;
+}
+
+[data-bs-theme="dark"] .homcontainer {
+    background-color: #000 !important; 
+    background-image: url(image/darkmode.png); /* ini juga diganti jadi gambar yng latar hitam */
+}
+.img-thumbnail {
+    position: relative;
+    left: 40px !important; /* Geser gambar 50px ke kanan */
+    margin-top: 50px !important;
+    width: 190px; /* Atur lebar gambar menjadi kecil */
+    height: 200px; /* Atur tinggi gambar agar semua gambar sama */
+    float: left; /* Atur gambar agar mengapung ke kiri dan berjejer */
+    margin-right: 10px; /* Jarak antara gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+.img-fluid2 {
+    top: 50px !important;
+    padding: 10px;
+    padding-left: 110px;
+}
+.img-thumbnail2 {
+    position: relative;
+    left: 90px !important; /* Geser gambar 50px ke kanan */
+    margin-top: 50px !important;
+    width: 200px; /* Atur lebar gambar menjadi kecil */
+    height: 200px; /* Atur tinggi gambar agar semua gambar sama */
+    float: left; /* Atur gambar agar mengapung ke kiri dan berjejer */
+    margin-right: 30px; /* Jarak antara gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+.img-fluid3 {
+    top: 50px !important;
+    padding: 10px;
+    padding-left: 200px;
+}
+.homcontainer {
+    background-image: url(image/bcknav2.png);
+}
+.homcontainer ul li p{
+    color: black;
+}
+
+
+[data-bs-theme="dark"] .card-title{
+    background-color: black !important;
+}
+.card-title{
+    background-color: white !important;
+}
+[data-bs-theme="dark"] .card-text{
+    background-color: black !important;
+}
+.card-text {
+    background-color: white !important;
+}

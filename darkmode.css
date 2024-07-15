@@ -1,0 +1,23 @@
+/* Gaya default (mode terang) */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Gaya untuk mode gelap */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Contoh tambahan untuk elemen lain */
+header, footer {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #343a40;
+    color: white;
+}
